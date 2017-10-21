@@ -1,0 +1,33 @@
+<h1>Miami Tree Permits</h1>
+ <div id="mapid"></div>
+
+<table id="permits">
+	<% @permits.each do |p| %>
+
+	<tr>
+		<td><%= p.lat %></td>
+		<td><%= p.long %></td>
+	</tr>
+	<% end %>
+</table>
+
+
+
+
+
+
+
+
+<p><sup>&reg;</sup> Miami Day of Civic Hacking 2017</p>
+
+ <script>var mymap = L.map('mapid').setView([25.8, -80.2], 11);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiYm9uem9lc2MiLCJhIjoiOHFyTmFKTSJ9.xM5MgilXGmCcTGj9u9cM6g'
+}).addTo(mymap);
+
+
+
+</script>
