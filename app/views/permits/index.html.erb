@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Permits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Status date</th>
+      <th>City source ID</th>
+      <th>Address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @permits.each do |permit| %>
+      <tr>
+        <td><%= permit.lat %></td>
+        <td><%= permit.long %></td>
+        <td><%= permit.status_date %></td>
+        <td><%= permit.city_source_id %></td>
+        <td><%= permit.address %></td>
+        <td><%= link_to 'Show', permit %></td>
+        <td><%= link_to 'Edit', edit_permit_path(permit) %></td>
+        <td><%= link_to 'Destroy', permit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Permit', new_permit_path %>

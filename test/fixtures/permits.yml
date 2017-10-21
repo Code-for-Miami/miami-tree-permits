@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat: 1.5
+  long: 1.5
+  status_date: 2017-10-21 18:23:11
+  city_source_id: 
+  address: MyString
+
+two:
+  lat: 1.5
+  long: 1.5
+  status_date: 2017-10-21 18:23:11
+  city_source_id: 
+  address: MyString
