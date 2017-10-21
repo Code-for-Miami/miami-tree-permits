@@ -1,0 +1,97 @@
+<p id="notice"><%= notice %></p>
+
+<h1>City Sources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Planaccepteddate</th>
+      <th>Location 1</th>
+      <th>Workitems</th>
+      <th>Daysincity</th>
+      <th>Daysincitynumeric</th>
+      <th>Propertytype</th>
+      <th>Ispermitfinal</th>
+      <th>Buildingpermitstatusdescription</th>
+      <th>Applicationnumber</th>
+      <th>Totalcost</th>
+      <th>Certificatedate</th>
+      <th>Companyaddress</th>
+      <th>Plancreateddate</th>
+      <th>Certificatecode</th>
+      <th>Companycity</th>
+      <th>Requiredcertificate</th>
+      <th>Processnumber</th>
+      <th>Remsqft</th>
+      <th>Totalsqft</th>
+      <th>Scopeofwork</th>
+      <th>Newadditioncost</th>
+      <th>Issueddate</th>
+      <th>Totaldaysinplanreview</th>
+      <th>Additionsqft</th>
+      <th>Buildingpermitstatusreasondescription</th>
+      <th>Firstsubmissiondate</th>
+      <th>Folionumber</th>
+      <th>Isprivateprovider</th>
+      <th>Statusdate</th>
+      <th>Totaldaysinplanreviewnumeric</th>
+      <th>Miami21zone</th>
+      <th>Permitnumber</th>
+      <th>Companyname</th>
+      <th>Remodelingcost</th>
+      <th>Deliveryaddress</th>
+      <th>Companyzip</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @city_sources.each do |city_source| %>
+      <tr>
+        <td><%= city_source.planaccepteddate %></td>
+        <td><%= city_source.location_1 %></td>
+        <td><%= city_source.workitems %></td>
+        <td><%= city_source.daysincity %></td>
+        <td><%= city_source.daysincitynumeric %></td>
+        <td><%= city_source.propertytype %></td>
+        <td><%= city_source.ispermitfinal %></td>
+        <td><%= city_source.buildingpermitstatusdescription %></td>
+        <td><%= city_source.applicationnumber %></td>
+        <td><%= city_source.totalcost %></td>
+        <td><%= city_source.certificatedate %></td>
+        <td><%= city_source.companyaddress %></td>
+        <td><%= city_source.plancreateddate %></td>
+        <td><%= city_source.certificatecode %></td>
+        <td><%= city_source.companycity %></td>
+        <td><%= city_source.requiredcertificate %></td>
+        <td><%= city_source.processnumber %></td>
+        <td><%= city_source.remsqft %></td>
+        <td><%= city_source.totalsqft %></td>
+        <td><%= city_source.scopeofwork %></td>
+        <td><%= city_source.newadditioncost %></td>
+        <td><%= city_source.issueddate %></td>
+        <td><%= city_source.totaldaysinplanreview %></td>
+        <td><%= city_source.additionsqft %></td>
+        <td><%= city_source.buildingpermitstatusreasondescription %></td>
+        <td><%= city_source.firstsubmissiondate %></td>
+        <td><%= city_source.folionumber %></td>
+        <td><%= city_source.isprivateprovider %></td>
+        <td><%= city_source.statusdate %></td>
+        <td><%= city_source.totaldaysinplanreviewnumeric %></td>
+        <td><%= city_source.miami21zone %></td>
+        <td><%= city_source.permitnumber %></td>
+        <td><%= city_source.companyname %></td>
+        <td><%= city_source.remodelingcost %></td>
+        <td><%= city_source.deliveryaddress %></td>
+        <td><%= city_source.companyzip %></td>
+        <td><%= link_to 'Show', city_source %></td>
+        <td><%= link_to 'Edit', edit_city_source_path(city_source) %></td>
+        <td><%= link_to 'Destroy', city_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New City Source', new_city_source_path %>

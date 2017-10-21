@@ -1,0 +1,197 @@
+<%= form_with(model: city_source, local: true) do |form| %>
+  <% if city_source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(city_source.errors.count, "error") %> prohibited this city_source from being saved:</h2>
+
+      <ul>
+      <% city_source.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :planaccepteddate %>
+    <%= form.text_field :planaccepteddate, id: :city_source_planaccepteddate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location_1 %>
+    <%= form.text_field :location_1, id: :city_source_location_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :workitems %>
+    <%= form.text_field :workitems, id: :city_source_workitems %>
+  </div>
+
+  <div class="field">
+    <%= form.label :daysincity %>
+    <%= form.text_field :daysincity, id: :city_source_daysincity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :daysincitynumeric %>
+    <%= form.text_field :daysincitynumeric, id: :city_source_daysincitynumeric %>
+  </div>
+
+  <div class="field">
+    <%= form.label :propertytype %>
+    <%= form.text_field :propertytype, id: :city_source_propertytype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ispermitfinal %>
+    <%= form.text_field :ispermitfinal, id: :city_source_ispermitfinal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buildingpermitstatusdescription %>
+    <%= form.text_field :buildingpermitstatusdescription, id: :city_source_buildingpermitstatusdescription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :applicationnumber %>
+    <%= form.text_field :applicationnumber, id: :city_source_applicationnumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totalcost %>
+    <%= form.text_field :totalcost, id: :city_source_totalcost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :certificatedate %>
+    <%= form.text_field :certificatedate, id: :city_source_certificatedate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :companyaddress %>
+    <%= form.text_field :companyaddress, id: :city_source_companyaddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plancreateddate %>
+    <%= form.text_field :plancreateddate, id: :city_source_plancreateddate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :certificatecode %>
+    <%= form.text_field :certificatecode, id: :city_source_certificatecode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :companycity %>
+    <%= form.text_field :companycity, id: :city_source_companycity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :requiredcertificate %>
+    <%= form.text_field :requiredcertificate, id: :city_source_requiredcertificate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :processnumber %>
+    <%= form.text_field :processnumber, id: :city_source_processnumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :remsqft %>
+    <%= form.text_field :remsqft, id: :city_source_remsqft %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totalsqft %>
+    <%= form.text_field :totalsqft, id: :city_source_totalsqft %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scopeofwork %>
+    <%= form.text_field :scopeofwork, id: :city_source_scopeofwork %>
+  </div>
+
+  <div class="field">
+    <%= form.label :newadditioncost %>
+    <%= form.text_field :newadditioncost, id: :city_source_newadditioncost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issueddate %>
+    <%= form.text_field :issueddate, id: :city_source_issueddate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totaldaysinplanreview %>
+    <%= form.text_field :totaldaysinplanreview, id: :city_source_totaldaysinplanreview %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additionsqft %>
+    <%= form.text_field :additionsqft, id: :city_source_additionsqft %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buildingpermitstatusreasondescription %>
+    <%= form.text_field :buildingpermitstatusreasondescription, id: :city_source_buildingpermitstatusreasondescription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :firstsubmissiondate %>
+    <%= form.text_field :firstsubmissiondate, id: :city_source_firstsubmissiondate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :folionumber %>
+    <%= form.text_field :folionumber, id: :city_source_folionumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isprivateprovider %>
+    <%= form.text_field :isprivateprovider, id: :city_source_isprivateprovider %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusdate %>
+    <%= form.text_field :statusdate, id: :city_source_statusdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totaldaysinplanreviewnumeric %>
+    <%= form.text_field :totaldaysinplanreviewnumeric, id: :city_source_totaldaysinplanreviewnumeric %>
+  </div>
+
+  <div class="field">
+    <%= form.label :miami21zone %>
+    <%= form.text_field :miami21zone, id: :city_source_miami21zone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :permitnumber %>
+    <%= form.text_field :permitnumber, id: :city_source_permitnumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :companyname %>
+    <%= form.text_field :companyname, id: :city_source_companyname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :remodelingcost %>
+    <%= form.text_field :remodelingcost, id: :city_source_remodelingcost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deliveryaddress %>
+    <%= form.text_field :deliveryaddress, id: :city_source_deliveryaddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :companyzip %>
+    <%= form.text_field :companyzip, id: :city_source_companyzip %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
