@@ -1,0 +1,42 @@
+<%= form_with(model: permit, local: true) do |form| %>
+  <% if permit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(permit.errors.count, "error") %> prohibited this permit from being saved:</h2>
+
+      <ul>
+      <% permit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :lat %>
+    <%= form.text_field :lat, id: :permit_lat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :long %>
+    <%= form.text_field :long, id: :permit_long %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_date %>
+    <%= form.datetime_select :status_date, id: :permit_status_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_source_id %>
+    <%= form.text_field :city_source_id, id: :permit_city_source_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :permit_address %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
